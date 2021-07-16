@@ -1,0 +1,45 @@
+.searchBar {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+ input[name=search] {
+   border: 2px solid #ccc;
+   border-radius: 5px;
+   width: 95%;
+   height: 45px;
+ }
+
+ input[placeholder=Search] {
+  padding-left: 10px;
+ }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  input[name=search] {
+    width: 500px;
+    height: 45px;
+  }
+
+  .gallery {
+   grid-template-columns: repeat(3, 200px);
+   grid-gap: 25px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery {
+   grid-template-columns: repeat(4, 200px);
+   grid-gap: 25px;
+  }
+
+}
